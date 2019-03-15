@@ -11,7 +11,7 @@ Project status
 |CC2650 |http://www.ti.com/lit/ds/symlink/cc2650.pdf | complete |
 |IEEE 802.15.4 | http://ecee.colorado.edu/~liue/teaching/comm_standards/2015S_zigbee/802.15.4-2011.pdf| Complete |
 |Contiki and cooja simulator | http://www.contiki-os.org/start.html | complete |
-|Contiki | |complete |
+|Contiki with hands-on | https://github.com/ayindriladutta/cvt_time_synch/tree/master/contiki_handson |complete |
 |Implementation of cristian's algorithm in C| https://github.com/ayindriladutta/cvt_time_synch/tree/master/cristian_Algo | Complete |
 |Design of Request Respose packet structure | | Complete |
 |Design of Algorithm | |complete |
