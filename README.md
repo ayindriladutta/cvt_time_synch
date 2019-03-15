@@ -15,6 +15,6 @@ Project status
 |Implementation of cristian's algorithm in C| https://github.com/ayindriladutta/cvt_time_synch/tree/master/cristian_Algo | Complete |
 |Design of Request Respose packet structure | | Complete |
 |Design of Algorithm | |complete |
-|Implementation | TBD |
-|Test Case design |TBD |
+|Implementation | |TBD |
+|Test Case design | |TBD |
  
