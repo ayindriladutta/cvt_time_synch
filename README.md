@@ -13,8 +13,8 @@ Project status
 |Contiki and cooja simulator | [link](http://www.contiki-os.org/start.html) | complete |
 |Contiki with hands-on |[link]( https://github.com/ayindriladutta/cvt_time_synch/tree/master/contiki_handson )|complete |
 |Implementation of cristian's algorithm in C|[link]( https://github.com/ayindriladutta/cvt_time_synch/tree/master/cristian_Algo )| Complete |
-|Design of Algorithm | | |
-	Design of Request Respose packet structure
-|Implementation | |TBD |
-|Test Case design | |TBD |
+|Design of Algorithm
+	1) Design of Request Respose packet structure
+	2) kdmkdmkdm
+| | | | |
  
