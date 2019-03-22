@@ -1,5 +1,5 @@
-##Structure of Request Response packet
---------------------------------------
+Structure of Request Response packet
+---------------------------------------
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |Time request Inst. |Time Accuracy |	      |
