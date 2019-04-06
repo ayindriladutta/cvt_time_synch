@@ -1,0 +1,19 @@
+1stApril-5thApril
+-------------------
+
+1. Hands-on on CC2650
+2. Gone through examples in code composer studio(Resource Explorer)
+3. RF communication between two cc2650
+4. Algorithm scenario 
+		a.Push-broadcast time by FFD
+		b.Poll-RFD request time to FFD
+		c.algorithm mode(Beacon enable or Non beacon enable mode)
+		
+5.Project Report (structure) 
+
+8thApril-12thApril
+-------------------
+1.Design of Algorithm.
+2.project Report
+3.Start Simulation On Cooja
+4.Detail description on what learnt through out the week
