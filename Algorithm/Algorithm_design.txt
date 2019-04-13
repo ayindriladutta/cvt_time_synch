@@ -1,0 +1,78 @@
+Algorithm Approach:
+---------------------
+
+Goal: RFD achieve time Synchronization with respect to FFD
+
+Assumptions: i) RFD is able to Transmit and receive data request (Extended RFD)
+		 	ii) Time is set to Zero at the starting of the month.
+			iii) Time Accuracy : microsec(42 bits)
+				        		Milliseconds(32 bits)
+			iv)Time Instruction Request is 4 bits mnemonic.
+			v) Time Accuracy mnemonics is 2 bits.
+			vi) for calculating Round Trip Time , Request Time is equal to the response time
+
+Approach: 
+	i) Poll : concept is RFD request current time to FFD for synchronization
+	ii) Push : FFD broadcast it’s current time to all RFDs after a interval of time
+
+Algorithm Poll:
+
+-------------------------------------------------------------------------------------------
+1.Procedure Request_Time()
+2.{
+3.T1 <- Current_RFD_time
+4.Send_Request (Buffer_Inst_packet, 4 bit)
+5.If Receive_Respose == 1 then
+6.T2 <- Current_RFD_time
+7.Process_Respose (TIME_FFD, 44 bit ,T1,T2)
+8.Else
+9.Set_Time_Interval
+10.Send_Request (Buffer_Inst_packet, 4 bit)
+11.End if
+12.}
+
+
+1.Procedure Response_time()
+2.{
+3.Accept_Request(Buffer_Inst_packet, 4 bit)
+4.Process_Request()
+5.Respose_Send (TIME_FFD, 44 bit)
+6.If Ack_Receive == 1 then
+7.close_Connection ()
+8.Else 
+9.Respose_Send (TIME_FFD, 44 bit)
+10.End if
+11.}
+
+1.Procedure Process_Response(TIME_FFD, T1, T2)
+2.{
+3.Calculate_RTT = (T2-T1)/2
+4.Update_Time_RFD = TIME_FFD + Calculate_RTT
+5.}
+
+------------------------------------------------------------------------------------------------
+
+Algorithm Push:
+------------------------------------------------------------------------------------------------
+Procedure Broadcast_Time()
+{
+While(1)
+Set_Time_Interva
+Packet_Buffer_Create(TIME_FFD , 44 bit)
+End While
+
+Procedure Broadcast_Receive()
+{
+If Receive_buffer == FULL then
+diacard_packet()
+Else
+Update_Time_RFD
+End if
+}
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
