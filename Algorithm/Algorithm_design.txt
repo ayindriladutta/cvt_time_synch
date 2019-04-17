@@ -6,7 +6,7 @@ Goal: RFD achieve time Synchronization with respect to FFD
 Assumptions: i) RFD is able to Transmit and receive data request (Extended RFD)
 		 	ii) Time is set to Zero at the starting of the month.
 			iii) Time Accuracy : microsec(42 bits)
-				        		Milliseconds(32 bits)
+				             milliseconds(32 bits)
 			iv)Time Instruction Request is 4 bits mnemonic.
 			v) Time Accuracy mnemonics is 2 bits.
 			vi) for calculating Round Trip Time , Request Time is equal to the response time
